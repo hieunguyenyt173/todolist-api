@@ -127,5 +127,70 @@ todoInputEl.addEventListener("keydown", (event) => {
         addTodo();
     }
 })
+// Lọc công việc theo trạng thái
+Array.from(todoOptionEls).forEach(input => {
+    input.addEventListener("change", async function() {
+        let option = input.value;
+        let todoFilter = [];
+        // Gọi API 
+        let res = await axios.get("/todos");
+        todos = res.data;
+        switch(option) {
+            case "all" : {
+                todoFilter = [...todos];  // spread operator
+                break;
+            }
+            case "active" : {
+            todoFilter = todos.filter(todo => todo.status == true);
+            break;
+            }
+            case "unactive" : {
+            todoFilter = todos.filter(todo => todo.status == false);
+            break; 
+            }
+            default : {
+                todoFilter = [...todos];  // spread operator
+                break;
+            }
+
+        }
+        renderTodo(todoFilter)
+    
+
+    })
+})
+// Chỉnh sửa công việc
+
+let idUpdate = null;
+const updateTodo =  async function(id) {
+    let title;
+    let res = await axios.get("/todos");
+    todos = res.data;
+    for(let i = 0; i < todos.length; i++) {
+        if(todos[i].id == id) {
+            title = todos[i].title;
+        }
+    }
+    btnChange.style.display = "inline-block";
+    btnAdd.style.display = "none";
+    todoInputEl.value = title;
+    todoInputEl.focus();
+    idUpdate = id;
+    
+}
+btnChange.addEventListener("click", async function(id) {
+    let res = await axios.get("/todos");
+    todos = res.data;
+    for(let i = 0; i < todos.length; i++) {
+        if(todos[i].id == idUpdate) {
+            todos[i].title = todoInputEl.value;
+        }
+    }
+    btnChange.style.display = "none";
+    btnAdd.style.display = "inline-block";
+    todoInputEl.value = "";
+    renderTodo(todos);
+   
+})
 
 getTodos();
