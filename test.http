@@ -1,0 +1,55 @@
+GET http://localhost:3000/todos HTTP/1.1
+
+###
+GET http://localhost:3000/todos/1 HTTP/1.1
+
+###
+# Tạo mới công việc
+POST http://localhost:3000/todos/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "title" : "New todo",
+    "status" : false
+}
+###
+GET http://localhost:3000/todos/http://localhost:3000/todos/ HTTP/1.1
+
+### Xóa công việc
+DELETE http://localhost:3000/todos/4 HTTP/1.1
+###
+DELETE http://localhost:3000/todos/5 HTTP/1.1
+
+### Tìm kiếm 
+GET http://localhost:3000/todos?q=java HTTP/1.1
+
+### 
+GET http://localhost:3000/products HTTP/1.1
+
+### Update công việc
+PUT http://localhost:3000/products/1 HTTP/1.1
+Content-Type:  application/json
+
+{
+  "id": 1,
+    "name": "Áo thun siêu chất.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolore quia itaque harum consequuntur molestias.",
+    "images": [
+      "https://images.unsplash.com/photo-1654885506947-fe5280d8e0ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "https://images.unsplash.com/photo-1654886611366-72d5bc6be7c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "https://images.unsplash.com/photo-1654863075380-5fce8cae1851?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+      "https://images.unsplash.com/photo-1654933922741-1d0f3e758055?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    ],
+    "rating": 4.5,
+    "price": 410000,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ]
+  }  
+### Sắp xếp theo giá
+GET http://localhost:3000/products?_sort=price HTTP/1.1
+  
+### Lọc sản phẩm
+GET http://localhost:3000/products?id=4&id=3 HTTP/1.1
