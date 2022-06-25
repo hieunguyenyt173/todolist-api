@@ -85,7 +85,7 @@ const toggleStatus = async (id) => {
     // Thay đổi trạng thái của công việc đó: true -> false: false -> true;
     todo.stasus = !todo.stasus;
     // Gọi API
-    await axios.put(`/todos/${id}`, todo)
+    await axios.put(`/todos/${id}`, todo);
     //hiển thị lên trên giao diện
    renderTodo(todos);
 
