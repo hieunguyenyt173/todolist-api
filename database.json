@@ -8,32 +8,14 @@
     {
       "id": 2,
       "title": "Đá bóng",
-      "status": false
+      "status": true,
+      "stasus": false
     },
     {
       "title": "New todo",
-      "status": false,
-      "id": 8
-    },
-    {
-      "title": "New todo",
-      "status": false,
-      "id": 9
-    },
-    {
-      "title": "New todo",
-      "status": false,
-      "id": 10
-    },
-    {
-      "title": "New todo",
-      "status": false,
-      "id": 11
-    },
-    {
-      "title": "New todo",
-      "status": false,
-      "id": 12
+      "status": true,
+      "id": 12,
+      "stasus": true
     },
     {
       "title": "New todo",
@@ -53,12 +35,8 @@
     {
       "title": "New todo",
       "status": false,
-      "id": 16
-    },
-    {
-      "title": "New todo",
-      "status": false,
-      "id": 20
+      "id": 16,
+      "stasus": true
     },
     {
       "id": 255,
@@ -68,6 +46,16 @@
     {
       "id": 696,
       "title": "abcxyz",
+      "status": false
+    },
+    {
+      "id": 753,
+      "title": "Đi quẩy",
+      "status": false
+    },
+    {
+      "id": 641,
+      "title": "Đi chơi",
       "status": false
     }
   ],

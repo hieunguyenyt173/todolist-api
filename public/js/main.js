@@ -45,7 +45,7 @@ const renderTodo = arr => {
         html += `<div class="todo-item ${t.status ? "active-todo" : ""}">
         <div class="todo-item-title">
             <input type="checkbox" ${t.status ? "checked" : ""}
-            onclick="toggle(${t.id})"
+            onclick="toggleStatus(${t.id})"
             />
             <p>${t.title}</p>
         </div>
@@ -80,52 +80,19 @@ const renderTodo = arr => {
 // Thay đổi trạng thái công viêc 
 const toggleStatus = async (id) => {
     try {
-        //Lấy ra công việc cần thay đổi
+    //Lấy ra công việc cần thay đổi
     let todo = todos.find(todo => todo.id == id);
     // Thay đổi trạng thái của công việc đó: true -> false: false -> true;
-    todo.stasus = !todo.stasus;
+    todo.status = !todo.status;
     // Gọi API
     await axios.put(`/todos/${id}`, todo);
     //hiển thị lên trên giao diện
-   renderTodo(todos);
+    renderTodo(todos);
 
     } catch (error) {
         console.log(error)
     }
 }
-// // Chỉnh sửa công việc
-
-// let idUpdate = null;
-// const updateTodo = function(id) {
-//     let title
-//     for(let i = 0; i < todos.length; i++) {
-//         if(todos[i].id == id) {
-//             title = todos[i].title;
-//         }
-//     }
-//     btnChange.style.display = "inline-block";
-//     btnAdd.style.display = "none";
-//     todoInputEl.value = title;
-//     todoInputEl.focus();
-//     idUpdate = id;
-    
-// }
-// btnChange.addEventListener("click", function(id) {
-//     for(let i = 0; i < todos.length; i++) {
-//         if(todos[i].id == idUpdate) {
-//             todos[i].title = todoInputEl.value;
-//         }
-//     }
-//     btnChange.style.display = "none";
-//     btnAdd.style.display = "inline-block";
-//     todoInputEl.value = "";
-//     renderTodo(todos);
-   
-// })
-
-
-
-
 // Thêm công việc
 const addTodo = async () => {
     //  Lấy ra dữ liệu trong ô input
