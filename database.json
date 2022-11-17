@@ -3,27 +3,191 @@
     {
       "id": 1997,
       "userName": "admin",
-      "password": "admin"
+      "password": "admin123",
+      "account": "admin",
+      "createAt": "20/10/2022",
+      "info": {
+        "fullname": "Nguyễn Văn Hiếu",
+        "gender": "Nam",
+        "email": "hieunguyenyt173@gmail.com",
+        "address": "Hà Đông, Hà Nội",
+        "phone": "012345678"
+      },
+      "songFavorites": [],
+      "videoFavorites": [],
+      "playlist": [],
+      "songRecently": [],
+      "videoRecently": [],
+      "playlistRecently": [],
+      "playlistUser": [
+        {
+          "title": "abc",
+          "thumbnailB": "https://photo-zmp3.zmdcdn.me/album_default.png",
+          "songs": [],
+          "key": 5554
+        },
+        {
+          "title": "abcd",
+          "thumbnailB": "https://photo-zmp3.zmdcdn.me/album_default.png",
+          "songs": [],
+          "key": 1477
+        }
+      ]
     },
     {
-      "id": 1,
-      "userName": "hieunguyen",
-      "password": "1234"
-    },
-    {
-      "id": 2,
-      "userName": "hieunguyen1234",
-      "password": "1234"
-    },
-    {
-      "userName": "abc",
+      "id": 7529,
+      "userName": "test123",
       "password": "123",
-      "id": "gjmUeaz"
-    },
-    {
-      "id": 3536,
-      "userName": "anhhieu",
-      "password": "123"
+      "account": "user",
+      "createAt": "Wednesday, Nov 16, 2022",
+      "info": {
+        "fullname": "",
+        "gender": "",
+        "email": "",
+        "address": "",
+        "phone": ""
+      },
+      "songFavorites": [
+        {
+          "encodeId": "Z6OZW0A9",
+          "title": "Hoa Dại",
+          "alias": "Hoa-Dai-Phuong-My-Chi",
+          "isOffical": true,
+          "username": "",
+          "artistsNames": "Phương Mỹ Chi",
+          "artists": [
+            {
+              "id": "IWZ9EWB6",
+              "name": "Phương Mỹ Chi",
+              "link": "/Phuong-My-Chi",
+              "spotlight": false,
+              "alias": "Phuong-My-Chi",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/c/7/c/cc7c910344b4df0d33bc28dee910fc20.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/c/c/7/c/cc7c910344b4df0d33bc28dee910fc20.jpg",
+              "isOA": true,
+              "isOABrand": false,
+              "playlistId": "Z6BOEAI0"
+            }
+          ],
+          "isWorldWide": true,
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/4/a/8/4/4a84d047b65c86cd994a6ee2fad8b0b1.jpg",
+          "link": "/bai-hat/Hoa-Dai-Phuong-My-Chi/Z6OZW0A9.html",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/4/a/8/4/4a84d047b65c86cd994a6ee2fad8b0b1.jpg",
+          "duration": 220,
+          "zingChoice": false,
+          "isPrivate": false,
+          "preRelease": false,
+          "releaseDate": 1668603604,
+          "genreIds": [
+            "IWZ9Z08I",
+            "IWZ97FCD"
+          ],
+          "indicators": [],
+          "isIndie": false,
+          "streamingStatus": 1,
+          "allowAudioAds": true,
+          "hasLyric": true
+        },
+        {
+          "encodeId": "Z6OA8FO6",
+          "title": "Xe Đạp Ơi (25th Làn Sóng Xanh)",
+          "alias": "Xe-Dap-Oi-25th-Lan-Song-Xanh-Juky-San-Hoang-Duyen",
+          "isOffical": true,
+          "username": "",
+          "artistsNames": "Juky San, Hoàng Duyên",
+          "artists": [
+            {
+              "id": "IW6UZW08",
+              "name": "Juky San",
+              "link": "/Juky-San",
+              "spotlight": false,
+              "alias": "Juky-San",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/3/9/6/5/396532a35b396003e9047a63e2f04419.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/3/9/6/5/396532a35b396003e9047a63e2f04419.jpg",
+              "isOA": true,
+              "isOABrand": false,
+              "playlistId": "Z6BUI09Z"
+            },
+            {
+              "id": "IW68E9FA",
+              "name": "Hoàng Duyên",
+              "link": "/Hoang-Duyen",
+              "spotlight": false,
+              "alias": "Hoang-Duyen",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/6/1/9/6/619672078f62a2d9e5bec3d6318e42eb.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/6/1/9/6/619672078f62a2d9e5bec3d6318e42eb.jpg",
+              "isOA": true,
+              "isOABrand": false,
+              "playlistId": "SAED698B"
+            }
+          ],
+          "isWorldWide": false,
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/9/8/e/0/98e0c0bb1deb37757044fc42eb5af072.jpg",
+          "link": "/bai-hat/Xe-Dap-Oi-25th-Lan-Song-Xanh-Juky-San-Hoang-Duyen/Z6OA8FO6.html",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/9/8/e/0/98e0c0bb1deb37757044fc42eb5af072.jpg",
+          "duration": 256,
+          "zingChoice": false,
+          "isPrivate": false,
+          "preRelease": false,
+          "releaseDate": 1668531605,
+          "genreIds": [
+            "IWZ9Z08I",
+            "IWZ9Z088",
+            "IWZ97FCD"
+          ],
+          "indicators": [],
+          "isIndie": false,
+          "streamingStatus": 1,
+          "allowAudioAds": false,
+          "hasLyric": true
+        },
+        {
+          "encodeId": "Z6OAOZCW",
+          "title": "Hạnh Phúc Máu",
+          "alias": "Hanh-Phuc-Mau-Thao-Trang",
+          "isOffical": true,
+          "username": "",
+          "artistsNames": "Thảo Trang",
+          "artists": [
+            {
+              "id": "IWZ9ZC9U",
+              "name": "Thảo Trang",
+              "link": "/nghe-si/Thao-Trang",
+              "spotlight": false,
+              "alias": "Thao-Trang",
+              "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/c/8c1903a5f135ea85d11ad9b037e1502f_1508251556.jpg",
+              "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/c/8c1903a5f135ea85d11ad9b037e1502f_1508251556.jpg",
+              "isOA": false,
+              "isOABrand": false,
+              "playlistId": "Z6BU0C66"
+            }
+          ],
+          "isWorldWide": true,
+          "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/2/5/4/7/2547301cea2a7a100a5fd87f15b06f47.jpg",
+          "link": "/bai-hat/Hanh-Phuc-Mau-Thao-Trang/Z6OAOZCW.html",
+          "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_jpeg/cover/2/5/4/7/2547301cea2a7a100a5fd87f15b06f47.jpg",
+          "duration": 255,
+          "zingChoice": false,
+          "isPrivate": false,
+          "preRelease": false,
+          "releaseDate": 1668531603,
+          "genreIds": [
+            "IWZ9Z08I",
+            "IWZ97FCD"
+          ],
+          "indicators": [],
+          "isIndie": false,
+          "streamingStatus": 1,
+          "allowAudioAds": false,
+          "hasLyric": true
+        }
+      ],
+      "videoFavorites": [],
+      "playlist": [],
+      "songRecently": [],
+      "videoRecently": [],
+      "playlistRecently": [],
+      "playlistUser": []
     }
   ]
 }
